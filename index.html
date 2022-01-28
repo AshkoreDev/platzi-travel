@@ -13,21 +13,21 @@
   </head>
   <body class="font-Montserrat">
     <header>
-      <nav class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md lg:hidden">
+      <section class="w-full h-16 bg-white fixed left-0 bottom-0 z-10 shadow-md md:hidden">
         <ul class="h-full flex justify-around items-center text-gray-200">
           <li>
             <a href="#home">
-              <img class="fill-current text-gray-400" src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/none/external-house-construction-and-tools-kiranshastry-gradient-kiranshastry.png"/>
+              <img class="fill-current text-gray-400" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/000000/external-house-interface-kiranshastry-lineal-kiranshastry.png"/>
             </a>
           </li>
           <li>
             <a href="#featuredRents">
-              <img class="fill-current text-primary" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/30/none/external-search-ui-dreamstale-lineal-dreamstale.png"/>
+              <img class="fill-current text-gray-400" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/30/none/external-search-ui-dreamstale-lineal-dreamstale.png"/>
             </a>
           </li>
           <li>
             <a href="#recommended">
-              <img class="fill-current text-gray-400" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/none/external-heart-casino-kiranshastry-lineal-kiranshastry.png"/>
+              <img class="fill-current text-primary" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/000000/external-heart-casino-kiranshastry-lineal-kiranshastry.png"/>
             </a>
           </li>
           <li>
@@ -41,13 +41,45 @@
             </a>
           </li>
         </ul>
+      </section>
+
+      <nav class="w-full h-16 hidden p-4 bg-white shadow-md md:flex items-center justify-between fixed top-0 z-10">
+        <section class="w-auto h-auto flex items-center md:gap-2 lg:gap-4">
+          <img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/30/000000/external-plane-online-shopping-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" alt="">
+          <h1 class="text-primary font-black">Platzi Travel</h1>
+        </section>
+        <ul class="w-auto h-auto flex md:gap-4 lg:gap-6">
+          <li>
+            <a href="#home" class="text-base font-bold text-primary">Home</a>
+          </li>
+          <li>
+            <a href="#recommended" class="text-base font-bold text-primary">Recomendations</a>
+          </li>
+          <li>
+            <a href="#featuredRents" class="text-base font-bold text-primary">Trending</a>
+          </li>
+          <li>
+            <a href="#faqs" class="text-base font-bold text-primary">FAQs</a>
+          </li>
+          <li>
+            <a href="#aboutUs" class="text-base font-bold text-primary">About Us</a>
+          </li>
+        </ul>
+        <section class="w-auto h-auto flex md:gap-2 lg:gap-4">
+          <img class="fill-current text-primary"
+            src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/20/none/external-search-ui-dreamstale-lineal-dreamstale.png"/>
+          <img class="fill-current text-primary"
+            src="https://img.icons8.com/external-bearicons-detailed-outline-bearicons/20/none/external-moon-halloween-bearicons-detailed-outline-bearicons.png"/>
+          <img class="fill-current text-gray-400"
+            src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/20/none/external-user-back-to-school-kmg-design-glyph-kmg-design.png"/>
+        </section>
       </nav>
     </header>
 
     <main class="h-auto">
-      <section id="home">
-        <article class="w-full h-3/4 bg-sanFrancisc bg-cover md:bg-sanFranciscoDesktop md:bg-center md:h-96">
-          <div class="w-full h-full flex flex-col items-center space-y-80 py-4 md:space-y-0 md:items-start md:justify-center">
+      <section id="home" class="w-full h-[90vh] md:h-screen">
+        <article class="w-full h-full bg-sanFrancisco bg-cover md:bg-sanFranciscoDesktop md:bg-center md:h-full">
+          <div class="w-full h-full flex flex-col items-center space-y-80 py-4 md:space-y-0 md:items-start md:justify-center md:pt-32">
             <input type="search" class="outline-transparent p-4 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 md:hidden" placeholder="San Francisco"/>
             <p class="hidden md:block md: w-96 md:ml-16 md:pb-8 font-extrabold text-4xl">Find More Locations like this</p>
             <button class="py-3 px-10 rounded-full text-lg text-primary font-semibold bg-white shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 md:ml-16">Explore More</button>
@@ -252,7 +284,7 @@
         </section>
       </section>
 
-      <section class="h-auto p-4 mt-6 bg-gray-200 lg:px-6">
+      <section id="aboutUs" class="h-auto p-4 mt-6 bg-gray-200 lg:px-6">
         <h2 class="mb-6 text-2xl text-primary font-semibold">About Us</h2>
         <article class="text-sm text-gray-400 mt-4 space-y-4 lg:px-2">
           <p>Investors</p>
