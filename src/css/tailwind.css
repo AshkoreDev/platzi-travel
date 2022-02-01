@@ -7,8 +7,8 @@
 }
 
 .card:nth-child(even) {
-  @apply bg-white text-tertiary;
+  @apply bg-white text-tertiary dark:bg-gray-800 dark:text-white;
 }
 .card:nth-child(odd) {
-  @apply bg-secondary text-white;
+  @apply bg-secondary text-white dark:bg-gray-700;
 }
