@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
-    "tw:watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+    "tw:watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "tw:minify": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify"
   },
   "keywords": [],
   "author": "Aracely Alba @AshkoreDev",
