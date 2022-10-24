@@ -1,0 +1,27 @@
+{
+  "name": "platzi-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "tw:watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "tw:minify": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshkoreDev/platzi-travel.git"
+  },
+  "keywords": [],
+  "author": "Aracely Alba @AshkoreDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AshkoreDev/platzi-travel/issues"
+  },
+  "homepage": "https://github.com/AshkoreDev/platzi-travel#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.1"
+  }
+}
