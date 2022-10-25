@@ -13,7 +13,7 @@
 </head>
 <body>
 
-	 <header>
+	<header>
     <section class="w-full h-16 bg-white fixed left-0 bottom-0 z-10 shadow-md md:hidden dark:bg-gray-800">
       <ul class="h-full flex justify-around items-center text-gray-200">
         <li>
@@ -91,6 +91,18 @@
       </section>
     </nav>
   </header>
+
+  <main class="h-auto">
+  	<section id="home" class="w-full h-[90vh] md:h-screen">
+      <article class="w-full h-full bg-sanFrancisco bg-cover md:bg-sanFranciscoDesktop md:bg-center md:h-full">
+        <div class="w-full h-full flex flex-col items-center space-y-80 py-4 md:space-y-0 md:items-start md:justify-center md:pt-32">
+          <input type="search" class="outline-transparent p-4 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 md:hidden" placeholder="San Francisco"/>
+          <p class="hidden md:block md: w-96 md:ml-16 md:pb-8 font-extrabold text-4xl">Find More Locations like this</p>
+          <button class="py-3 px-10 rounded-full text-lg text-primary font-semibold bg-white shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 md:ml-16">Explore More</button>
+        </div>
+      </article>
+    </section>
+  </main>
 	
 </body>
 </html>
