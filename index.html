@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAV1JREFUSEvVlf8xRTEQhb9XASpABXSAClABHaADOqACowI6QAV0QAl0YL6ZZGZf3ua+PD/+kJnMnZtkz9mcPXvvjD8esz/G518RrAMfrSK/cYNd4B7YAm6A80jyUwLBHwGzr2MbeK8vLcEpsFcOeMj5CbwmZsjAPdYl8IoCrU0466ns+VSKmLlbSyUywEDnFFGWwx2gAnOjV4NViVJwmUaKbFaXwGZHOq250ZN1hMBYC/oyUZsuzghBzy2Rb845U30gWLTkCLh4B0B1WLfIan1bdiVxHiVWtKCOk4B0DDxkEkaJlhXT+OqW/dLBFfOqGGGBI6uBwfbBYXO6taKS2PVpg9XYqSLHzvaTYSHjiLd4BnwfukE8dA2clYUsGeu0A3ybwFu8FYLMKdEYqRojfaA7rMcF4I3aoXx2s5ZeWSID1FZgnwt/rLKuVNne0LdIkvR3mGXcro1INILTPfMFJp08GcwrNg8AAAAASUVORK5CYII=" type="image/x-icon">
+	<title>Platzi Travel</title>
+	<link rel="stylesheet" href="./public/css/tailwind.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+	 <header>
+    <section class="w-full h-16 bg-white fixed left-0 bottom-0 z-10 shadow-md md:hidden dark:bg-gray-800">
+      <ul class="h-full flex justify-around items-center text-gray-200">
+        <li>
+          <a href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;">
+              <path class="fill-current text-gray-400 dark:text-white" d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#featuredRents">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;">
+              <path class="fill-current text-primary" d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#recommended">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;">
+              <path class="fill-current text-gray-400 dark:text-white" d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <button id="toggleMobile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: none;transform: ;msFilter:;">
+              <path class="fill-current text-gray-400 dark:text-white" d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;">
+              <path class="fill-current text-gray-400 dark:text-white" d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <nav class="w-full h-16 hidden p-4 bg-white text-primary shadow-md md:flex items-center justify-between fixed top-0 z-10 dark:bg-gray-800 dark:text-white">
+      <section class="w-auto h-auto flex items-center md:gap-2 lg:gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;"><path class="fill-current text-primary dark:text-white"  d="M3.414 13.778 2 15.192l4.949 2.121 2.122 4.95 1.414-1.414-.707-3.536L13.091 14l3.61 7.704 1.339-1.339-1.19-10.123 2.828-2.829a2 2 0 1 0-2.828-2.828l-2.903 2.903L3.824 6.297 2.559 7.563l7.644 3.67-3.253 3.253-3.536-.708z"></path></svg>
+        <h1 class=" font-black">Platzi Travel</h1>
+      </section>
+      <ul class="w-auto h-auto flex md:gap-4 lg:gap-6">
+        <li>
+          <a href="#home" class="text-base font-bold">Home</a>
+        </li>
+        <li>
+          <a href="#recommended" class="text-base font-bold">Recomendations</a>
+        </li>
+        <li>
+          <a href="#featuredRents" class="text-base font-bold">Trending</a>
+        </li>
+        <li>
+          <a href="#faqs" class="text-base font-bold">FAQs</a>
+        </li>
+        <li>
+          <a href="#aboutUs" class="text-base font-bold">About Us</a>
+        </li>
+      </ul>
+      <section class="w-auto h-auto flex md:gap-2 lg:gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;">
+          <path class="fill-current text-gray-400 dark:text-white hover:cursor-pointer" d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path>
+        </svg>
+        <button id="toggleDesktop">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: none;transform: ;msFilter:;">
+            <path class="fill-current text-primary dark:text-white" d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path>
+          </svg>
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;">
+          <path class="fill-current text-gray-400 dark:text-white hover:cursor-pointer" d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
+        </svg>
+      </section>
+    </nav>
+  </header>
+	
+</body>
+</html>
