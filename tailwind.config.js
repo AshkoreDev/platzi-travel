@@ -19,6 +19,12 @@ module.exports = {
         'sydney': "url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/sydney.jpg')",
         'yosemite': "url('https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/yosemite.jpg')"
       },
+      backgroundColor: theme => ({
+        ...theme('colors'),
+        'primary': '#CC2D4A',
+        'secondary': '#8FA206',
+        'tertiary': '#61AEC9'
+      }),
     },
   },
   plugins: [],
