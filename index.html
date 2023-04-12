@@ -2,14 +2,17 @@
 <html lang="en" class="dark font-Montserrat">
 <head>
 	<meta charset="UTF-8">
+  <meta name="author" content="Aracely Alba @AshkoreDev">
+  <meta name="description" content="Travel Lading Page, HTML and TailwindCSS practice">
+  <meta name="keywords" content="HTML, TailwindCSS">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAV1JREFUSEvVlf8xRTEQhb9XASpABXSAClABHaADOqACowI6QAV0QAl0YL6ZZGZf3ua+PD/+kJnMnZtkz9mcPXvvjD8esz/G518RrAMfrSK/cYNd4B7YAm6A80jyUwLBHwGzr2MbeK8vLcEpsFcOeMj5CbwmZsjAPdYl8IoCrU0466ns+VSKmLlbSyUywEDnFFGWwx2gAnOjV4NViVJwmUaKbFaXwGZHOq250ZN1hMBYC/oyUZsuzghBzy2Rb845U30gWLTkCLh4B0B1WLfIan1bdiVxHiVWtKCOk4B0DDxkEkaJlhXT+OqW/dLBFfOqGGGBI6uBwfbBYXO6taKS2PVpg9XYqSLHzvaTYSHjiLd4BnwfukE8dA2clYUsGeu0A3ybwFu8FYLMKdEYqRojfaA7rMcF4I3aoXx2s5ZeWSID1FZgnwt/rLKuVNne0LdIkvR3mGXcro1INILTPfMFJp08GcwrNg8AAAAASUVORK5CYII=" type="image/x-icon">
+	<link rel="shortcut icon" href="https://img.icons8.com/external-outline-satawat-anukul/FFFFFF/external-travel-travel-outline-outline-satawat-anukul-44.png" type="image/x-icon">
 	<title>Platzi Travel</title>
-	<link rel="stylesheet" href="./public/css/tailwind.css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="./public/css/tailwind.css"/>
 </head>
 <body class="dark:bg-gray-900">
 
@@ -56,7 +59,7 @@
 
     <nav class="w-full h-16 hidden p-4 bg-white text-primary shadow-md md:flex items-center justify-between fixed top-0 z-10 dark:bg-gray-800 dark:text-white">
       <section class="w-auto h-auto flex items-center md:gap-2 lg:gap-4">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:none;transform: ;msFilter:;"><path class="fill-current text-primary dark:text-white"  d="M3.414 13.778 2 15.192l4.949 2.121 2.122 4.95 1.414-1.414-.707-3.536L13.091 14l3.61 7.704 1.339-1.339-1.19-10.123 2.828-2.829a2 2 0 1 0-2.828-2.828l-2.903 2.903L3.824 6.297 2.559 7.563l7.644 3.67-3.253 3.253-3.536-.708z"></path></svg>
+       <img src="https://img.icons8.com/external-outline-satawat-anukul/FFFFFF/external-travel-travel-outline-outline-satawat-anukul-44.png" alt="Icon" width="22" height="22">
         <h1 class=" font-black">Platzi Travel</h1>
       </section>
       <ul class="w-auto h-auto flex md:gap-4 lg:gap-6">
@@ -96,7 +99,7 @@
   	<section id="home" class="w-full h-[90vh] md:h-screen">
       <article class="w-full h-full bg-sanFrancisco bg-cover md:bg-sanFranciscoDesktop md:bg-center md:h-full">
         <div class="w-full h-full flex flex-col items-center space-y-80 py-4 md:space-y-0 md:items-start md:justify-center md:pt-32">
-          <input type="search" class="outline-transparent p-4 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 md:hidden" placeholder="San Francisco"/>
+          <input type="search" class="outline-transparent p-4 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 md:hidden" placeholder="San Francisco" aria-label="Search input"/>
           <p class="hidden md:block md: w-96 md:ml-16 md:pb-8 font-extrabold text-4xl">Find More Locations like this</p>
           <button class="py-3 px-10 rounded-full text-lg text-primary font-semibold bg-white shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 md:ml-16">Explore More</button>
         </div>
@@ -106,7 +109,7 @@
     <section id="recommended" class="p-4 lg:px-6">
        <h2 class="mb-6 text-3xl text-primary font-semibold dark:text-white">Our Recomendations</h2>
 
-       <section class="w-auto h-80 py-6 flex items-center space-x-5 overflow-x-auto overscroll-x-contain overflow-y-hidden">
+       <section class="recomendation w-auto h-80 py-6 flex items-center space-x-5 overflow-x-auto overscroll-x-contain overflow-y-hidden">
          
          <article class="card">
           <figure class="w-full h-3/5">
@@ -311,10 +314,10 @@
         <p>Follow Us</p>
         <div class="flex space-x-5 text-gray-400">
           <a href="#">
-            <img src="https://img.icons8.com/material-outlined/30/9CA7AF/instagram-new--v1.png"/>
+            <img src="https://img.icons8.com/material-outlined/30/9CA7AF/instagram-new--v1.png" alt="Instagram icon" loading="lazy"/>
           </a>
           <a href="#">
-            <img src="https://img.icons8.com/ios-glyphs/30/9CA7AF/twitter--v1.png"/>
+            <img src="https://img.icons8.com/ios-glyphs/30/9CA7AF/twitter--v1.png" alt="Twitter icon" loading="lazy"/>
           </a>
         </div>
       </article>
